@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passcode Redirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            padding: 10px;
+            margin-top: 10px;
+            width: 80%;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Passcode</h2>
+        <input type="password" id="passcode" placeholder="Enter passcode">
+        <br>
+        <button onclick="checkPasscode()">Submit</button>
+    </div><script>
+    function checkPasscode() {
+        let passcode = document.getElementById("passcode").value;
+        if (passcode === "1234") {
+            window.location.href = "https://www.youtube.com";
+        } else if (passcode === "4321") {
+            window.location.href = "https://www.google.com";
+        } else {
+            alert("Incorrect passcode!");
+        }
+    }
+</script>
+
+</body>
+</html>
