@@ -46,7 +46,7 @@
     </div><script>
     function checkPasscode() {
         let passcode = document.getElementById("passcode").value;
-        if (passcode === "1234") {
+        if (passcode === "123") {
             window.location.href = "https://www.youtube.com";
         } else if (passcode === "4321") {
             window.location.href = "https://www.google.com";
